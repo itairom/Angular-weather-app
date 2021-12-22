@@ -1,0 +1,24 @@
+@import './../../../assets/style/main.scss';
+.app-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 16px;
+  color: white;
+  background-color: rgb(57, 57, 57);
+
+  @include for-narrow-layout{
+  }
+  ul{
+    list-style:none ;
+    li{
+      margin-left: 10px;
+    }
+  }
+  .active {
+    font-weight: bold;
+    
+    color: rgb(70, 161, 210);
+    border-bottom: 1px solid white;
+  }
+}

@@ -1,0 +1,19 @@
+<div class="weather-preview">
+    <div class="weather-card flex" >
+        <p class="day">{{getCurrentDate(dailyForecast?.EpochDate).slice(0, 3)}}</p>
+        <img src="https://www.accuweather.com/images/weathericons/{{setIcon(dailyForecast.Day.Icon)}}.svg"
+            alt="weather-icon" />
+        <div class="tempature-container flex">
+            <div class="tempature ">
+                <!-- <p>{{dailyForecast.Temperature.Minimum.Value}}</p> -->
+                <p>{{fToC(dailyForecast.Temperature.Minimum.Value)}} <span>C</span></p>
+            </div>
+        </div>
+    </div>
+    <!-- <a [routerLink]="['/weather',weather.name.first,weather.name.last]">
+
+        <p>{{weather.name.first}}</p>
+        <p>{{weather.name.last}}</p>
+        <img [src]="weather.picture.large" alt="profile-pic">
+    </a> -->
+</div>

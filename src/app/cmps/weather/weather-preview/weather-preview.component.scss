@@ -1,0 +1,27 @@
+.weather-preview {
+    display: flex;
+    justify-content: center;
+    .weather-card {
+        flex-direction: column;
+        text-align: center;
+        align-items: center;
+        justify-content: center;
+        background-color: rgb(234, 242, 242);
+        border-radius: 10px;
+        min-width: 70px;
+        max-width: 350px;
+        p {
+            font-size: 1.2rem;
+        }
+        .day {
+            font-weight: bold;
+            font-size: 1.4rem;
+        }
+        img {
+            min-width: 50px;
+            max-width: 300px;
+            padding: 15px;
+        }
+    }
+    // width: 200px;
+}

@@ -1,0 +1,14 @@
+<div class="weather-filter flex column">
+    <input placeholder="Search City.." type="text" [(ngModel)]="search" (ngModelChange)="handleChange(search)">
+    <!-- <input type="text" [(ngModel)]="search"  (ngModelChange)="onFilter.emit(search)"> -->
+    <div *ngIf="cities.length>0" class="city-list">
+        <p *ngFor="let city of cities" [city]="city" (click)="setCurrCiy(city)">{{city.LocalizedName}}</p>
+    </div>
+    <div class="curr-city-info">
+        <p *ngIf="currCity" class="city-name">{{currCity?.LocalizedName}}</p>
+        <p *ngIf="!currCity" class="city-name">Tel Aviv</p>
+    </div>
+    <div class="is-liked">
+        <img (click)="onAddTofavorits()" src="./../../../../assets/svg/heart.svg">
+    </div>
+</div>

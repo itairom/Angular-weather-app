@@ -1,0 +1,5 @@
+<div class="main-container weather-app">
+    <weather-filter (onFilter)="onSetFilter($event)"></weather-filter>
+
+    <weather-list [cityWeather]="this.cityWeather"></weather-list>
+</div>

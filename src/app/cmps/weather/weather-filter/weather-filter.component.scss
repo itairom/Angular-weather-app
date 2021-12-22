@@ -1,0 +1,23 @@
+.weather-filter {
+    margin-top: 20px;
+    align-items: center;
+    position: relative;
+    .city-list {
+        top: 30px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        position: absolute;
+        background-color: azure;
+        p {
+            width: 200px;
+            background-color: azure;
+            border-bottom: 1px solid #333;
+            text-align: center;
+            cursor: pointer;
+        }
+    }
+    input {
+        width: 200px;
+    }
+}
